@@ -1,11 +1,238 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Testing</title>
-    </head>
-    <body>
-        Hello, world.
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Monaden.se</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css" media="screen" type="text/css" charset="utf-8" />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" id="main-nav">
+    	<div class="sb-toggle-left">
+    		<a class="navbar-brand" href="#" style="color:#44a2f9">monaden.se</a>
+    	</div>
+
+    	<button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#menu">
+    		&#9776;
+    	</button>
+
+    	<button id="play" class="pull-xs-right">Play</button>
+    	<button id="pause" style="display: none" class="pull-xs-right">Pause</button>
+    	<button id="stop" style="display: none" class="pull-xs-right">Stop</button>
+
+    	<div class="clear hidden-lg-up"></div>
+
+    	<div class="collapse navbar-toggleable-md" id="menu">
+    		<ul class="nav navbar-nav">
+    			<li class="nav-item">
+            <a href="hello-world.html" class="nav-link">Nyheter</a>
+    			</li>
+
+    			<li class="nav-item">
+    				<a href="sgdata.html" class="nav-link">SAT</a>
+    			</li>
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link">Monaden</a>
+    			</li>
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link">För förstaårsstudenter</a>
+    			</li>
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link">Studera på GU</a>
+    			</li>
+
+    			<li class="nav-item dropdown">
+    				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" id="dLabel" aria-haspopup="true" aria-expanded="false">
+    					Kursinformation
+    				</a>
+    				<div class="dropdown-menu" aria-labeledby="dLabel">
+    					<a href="#" class="dropdown-item">Action</a>
+    					<a href="#" class="dropdown-item">Action</a>
+    				</div>
+    			</li>
+
+    		</ul>
+    	</div>
+    </nav>
+
+    <div class="header">
+    	<h1>monaden.se</h1>
+    </div>
+
+    <div class="container">
+
+    	<div id="player"></div>
+
+    	<div class="news">
+    		<div class="card-sizer col-xs-12 col-md-6 col-lg-4"></div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card card-info card-inverse text-xs-center">
+    				<div class="card-block">
+    					<h3 class="card-title">Räknestuga</h3>
+    					<p class="card-text">Just nu i Monaden</p>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+      				<h4 class="card-title">Sexmästeri</h4>
+      				<p class="card-text">
+      					Vi har uppstartat en intern information-insamling om vad sexmästeriet (fest-förening) ska göra på facebook eventet: eventet. Har du inte facebook och har några åsikter/ideer, dela gärna med er!
+      				</p>
+      				<a href="#" class="card-link">Facebook Event</a>
+      				<a href="#" class="card-link">Formulär</a>
+    				</div>
+
+    				<footer class="card-footer text-muted">
+    					<p class="card-text">Aktuellt</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card card-block">
+    				<p class="card-text">
+    					This is some text which is useful.
+    				</p>
+    				<a href="#" class="card-link">Link 1</a>
+    				<a href="#" class="card-link">Link 2</a>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<img class="card-img-top img-fluid" src="images/slack_logo.png" alt="">
+    				<div class="card-block">
+    					<p class="card-text">
+    						Monaden har skaffat en slack! Klicka här för att få en automatisk invite.
+    					</p>
+    				</div>
+    				<footer class="card-footer text-muted">
+    					<p class="card-text">2016-04-08</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<p class="card-text">
+    						Senaste Protokoll från styrelsemöte 2016-04-07
+    					</p>
+    				</div>
+    				<footer class="text-muted card-footer">
+    					<p class="card-text">2016-04-07</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<p class="card-text">
+    						Protokoll från Konstituerande styrelsemöte 2016-03-29
+    					</p>
+    				</div>
+    				<footer class="text-muted card-footer">
+    					<p class="card-text">2016-03-29</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<p class="card-text">
+    						Årsmötesprotokoll samt verksamhetsberättelse är uppladdat!
+    					</p>
+    				</div>
+    				<footer class="text-muted card-footer">
+    					<p class="card-text">2016-03-26</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<p class="card-text">
+    						Protokoll från styrelsemöte 2016-02-09
+    					</p>
+    				</div>
+    				<footer class="text-muted card-footer">
+    					<p class="card-text">2016-02-09</p>
+    				</footer>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<h4>Some other text</h4>
+    					<p class="card-text">
+    						And some text to go with that title. Lorom sit amet.
+    					</p>
+    				</div>
+    				<ul class="list-group list-group-flush">
+    					<li class="list-group-item">hello</li>
+    					<li class="list-group-item">dolor</li>
+    					<li class="list-group-item">sit amet</li>
+    				</ul>
+    				<div class="card-block">
+    					<a href="#" class="card-link">Card link</a>
+    					<a href="#" class="card-link">Another card link</a>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="newsbit col-xs-12 col-md-6 col-lg-4">
+    			<div class="card">
+    				<div class="card-block">
+    					<h4>Some other text</h4>
+    					<p class="card-text">
+    						And some text to go with that title. Lorom sit amet.
+    					</p>
+    				</div>
+    				<ul class="list-group list-group-flush">
+    					<li class="list-group-item">hello</li>
+    					<li class="list-group-item">dolor</li>
+    					<li class="list-group-item">sit amet</li>
+    				</ul>
+    				<div class="card-block">
+    					<a href="#" class="card-link">Card link</a>
+    					<a href="#" class="card-link">Another card link</a>
+    				</div>
+    			</div>
+    		</div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.color-2.1.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+    <script>
+    var msnry = $('.news').masonry({
+    	itemSelector: '.newsbit',
+    	columnWidth: '.card-sizer',
+    	percentPosition: true,
+    	transitionDuration: 0
+    });
+    msnry.imagesLoaded().progress( function() {
+    	msnry.masonry('layout');
+    });
+    </script>
+    <script type="text/javascript" src="js/navscroll.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+  </body>
 </html>
