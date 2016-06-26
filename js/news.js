@@ -1,0 +1,1 @@
+var news = [{"links": [], "image": "slack.png", "date": "2016-01-20", "text": "This is some text! Hello there!", "title": "hello"}, {"image": "slack_logo.png", "date": "2016-04-08", "text": "Monaden har skaffat en <strong>slack</strong>! Klicka <a href='hello'>h\u00e4r</a> f\u00f6r att f\u00e5 en automatisk invite."}];

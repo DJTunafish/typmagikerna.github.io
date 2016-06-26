@@ -1,0 +1,4 @@
+image: slack_logo.png
+date: 2016-04-08
+
+Monaden har skaffat en *slack*! Klicka [här](hello) för att få en automatisk invite.
