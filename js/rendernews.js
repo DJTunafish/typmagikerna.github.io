@@ -20,8 +20,9 @@ for (var i = 0; i < news.length; i++) {
   if (news[i].image !== undefined) {
     var card_image = document.createElement("img");
     card_image.className = "card-img-top img-fluid";
-    card_image.src = news[i].image;
-    card.alt = "";
+    card_image.src = "images/" + news[i].image;
+    card_image.alt = "";
+    card.appendChild(card_image);
   }
 
   // Each card has a "card-block" inside. This contains some text with
