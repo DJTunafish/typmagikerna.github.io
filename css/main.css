@@ -5,6 +5,11 @@ body {
   background-position: center top;
   background-color: #00a844; }
 
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
 .header {
   width: 100%;
   margin-bottom: 10px;
