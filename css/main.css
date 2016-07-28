@@ -22,6 +22,10 @@ body {
   color: white;
 }
 
+.navbar-toggler {
+  color: white;
+}
+
 
 .header {
   width: 100%;
