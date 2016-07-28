@@ -10,6 +10,11 @@ body {
   height: auto;
 }
 
+.navbar-toggleable-md {
+  background-color: #404040;
+}
+
+
 .header {
   width: 100%;
   margin-bottom: 10px;
