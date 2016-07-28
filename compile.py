@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os
 import re
@@ -148,7 +148,7 @@ def main():
         try:
             news.append(News.fromRaw(raw))
         except ValueError as e:
-            print("Error: " + e.strerror)
+            print("Error: " + str(e))
     print("Done.")
 
     print("Compiling to JSON...")
@@ -156,8 +156,11 @@ def main():
     for n in news:
         res.append(n.serializable())
 
-    print("Output:")
-    print(json.dumps(res))
+    print("Writing to news/news.json...")
+    with open(os.path.join("news", "news.json"), "w") as f:
+        f.write(json.dumps(res))
+
+    print("Done.")
 
 if __name__ == "__main__":
     main()
