@@ -89,12 +89,22 @@ $.getJSON("news/news.json", function (news) {
   }
   
   // When we are done, engage masonry.js
-  var msnry = new Masonry(newsDOM, {
+  var isotp = new Isotope(newsDOM, {
     itemSelector: '.newsbit',
     columnWidth: '.card-sizer',
     percentPosition: true,
     transitionDuration: 0
   });
+  
+  $('#searchstring').on("input", function (e) {
+      console.log("hi");
+      isotp.arrange({
+      	filter: function() {
+      	  var text = this.querySelector(".card-text").innerHTML;
+          return text.match(new RegExp($('#searchstring').val(), "i"));
+        }
+      });
+    });
   /*var msnry = newsDOM.masonry({
     itemSelector: '.newsbit',
     columnWidth: '.card-sizer',
