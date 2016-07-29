@@ -100,15 +100,9 @@ $.getJSON("news/news.json", function (news) {
       console.log("hi");
       isotp.arrange({
       	filter: function() {
-      	  var text = this.querySelector(".card-text").innerHTML;
+      	  var text = this.querySelector(".card-text").innerText;
           return text.match(new RegExp($('#searchstring').val(), "i"));
         }
       });
     });
-  /*var msnry = newsDOM.masonry({
-    itemSelector: '.newsbit',
-    columnWidth: '.card-sizer',
-    percentPosition: true,
-    transitionDuration: 0
-  });*/
 });
