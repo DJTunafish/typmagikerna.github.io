@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Monaden.se</title>
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="css/index.css" media="screen" type="text/css" charset="utf-8" />
-  </head>
-  <body>
-    <nav class="navbar navbar-fixed-top" id="main-nav">
-    	<div class="sb-toggle-left">
-    		<a class="navbar-brand" href="#" style="color:#44a2f9">monaden.se</a>
-    	</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monaden.se</title>
+  <link rel="stylesheet" href="css/bootstrap.css" media="screen" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/index.css" media="screen" type="text/css" charset="utf-8" />
+</head>
 
-    	<button class="navbar-toggler hidden-lg-up pull-xs-right" type="button" data-toggle="collapse" data-target="#menu">
-    		&#9776;
-    	</button>
-    	
-      <form class="form-inline pull-xs-right">
+<body>
+  <nav class="navbar navbar-fixed-top" id="main-nav">
+    <div class="hidden-xs-down col-sm-5 col-md-6 col-lg-2">
+      <a class="navbar-brand" href="#" style="color:#44a2f9">monaden.se</a>
+    </div>
+
+    <div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 pull-lg-right">
+      <form>
         <input class="form-control" id="searchstring" type="text" placeholder="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+    </div>
 
-    	<div class="clear hidden-lg-up"></div>
+    <div class="hidden-lg-up col-xs-2">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+      	  &#9776;
+      </button>
+    </div>
 
-    	<div class="collapse navbar-toggleable-md" id="menu">
-    		<ul class="nav navbar-nav">
-    			<li class="nav-item">
-            <a href="index.htm" class="nav-link">Nyheter</a>
-    			</li>
+    <div class="clear hidden-lg-up"></div>
 
-    			<li class="nav-item">
-    				<a href="sat.htm" class="nav-link">SAT</a>
-    			</li>
+    <div class="collapse navbar-toggleable-md col-lg-7" id="menu">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a href="index.htm" class="nav-link">Nyheter</a>
+        </li>
 
-    			<li class="nav-item">
-    				<a href="monaden.htm" class="nav-link">Monaden</a>
-    			</li>
+        <li class="nav-item">
+          <a href="sat.htm" class="nav-link">SAT</a>
+        </li>
 
-    			<li class="nav-item">
-    				<a href="forstaar.htm" class="nav-link">För förstaårsstudenter</a>
-    			</li>
+        <li class="nav-item">
+          <a href="monaden.htm" class="nav-link">Monaden</a>
+        </li>
 
-    			<li class="nav-item dropdown">
-    				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" id="dLabel" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+          <a href="forstaar.htm" class="nav-link">För förstaårsstudenter</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" id="dLabel" aria-haspopup="true" aria-expanded="false">
     					Kursinformation
     				</a>
-    				<div class="dropdown-menu" aria-labeledby="dLabel">
-    					<a href="#" class="dropdown-item">Action</a>
-    					<a href="#" class="dropdown-item">Action</a>
-    				</div>
-    			</li>
+          <div class="dropdown-menu" aria-labeledby="dLabel">
+            <a href="#" class="dropdown-item">Action</a>
+            <a href="#" class="dropdown-item">Action</a>
+          </div>
+        </li>
 
-    		</ul>
-    	</div>
-    </nav>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="header">
-    	<h1>monaden.se</h1>
+  <div class="header">
+    <h1>monaden.se</h1>
+  </div>
+
+  <div class="container">
+
+    <div id="player"></div>
+
+    <div class="news" id="news">
+      <div class="card-sizer col-xs-12 col-md-6 col-lg-4"></div>
     </div>
 
-    <div class="container">
+  </div>
 
-    	<div id="player"></div>
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.color-2.1.2.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+  <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/vendor/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/news.js"></script>
+  <script type="text/javascript" src="js/rendernews.js"></script>
+  <script type="text/javascript" src="js/navscroll.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+</body>
 
-      <div class="news" id="news">
-        <div class="card-sizer col-xs-12 col-md-6 col-lg-4"></div>
-      </div>
-
-    </div>
-
-    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery.color-2.1.2.min.js"></script>
-    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
-    <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/vendor/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/rendernews.js"></script>
-    <script type="text/javascript" src="js/navscroll.js"></script>
-    <script type="text/javascript" src="js/player.js"></script>
-  </body>
 </html>

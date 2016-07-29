@@ -12,21 +12,25 @@
 
 <body>
   <nav class="navbar navbar-fixed-top" id="main-nav">
-    <div class="sb-toggle-left">
+    <div class="hidden-xs-down col-sm-5 col-md-6 col-lg-2">
       <a class="navbar-brand" href="#" style="color:#44a2f9">monaden.se</a>
     </div>
 
-    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#menu">
-      &#9776;
-    </button>
+    <div class="col-xs-10 col-sm-5 col-md-4 col-lg-3 pull-lg-right">
+      <form>
+        <input class="form-control" id="searchstring" type="text" placeholder="Search">
+      </form>
+    </div>
 
-    <button id="play" class="pull-xs-right">Play</button>
-    <button id="pause" style="display: none" class="pull-xs-right">Pause</button>
-    <button id="stop" style="display: none" class="pull-xs-right">Stop</button>
+    <div class="hidden-lg-up col-xs-2">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+      	  &#9776;
+      </button>
+    </div>
 
-    <div class="clear hidden-md-up"></div>
+    <div class="clear hidden-lg-up"></div>
 
-    <div class="collapse navbar-toggleable-md" id="menu">
+    <div class="collapse navbar-toggleable-md col-lg-7" id="menu">
       <ul class="nav navbar-nav">
         <li class="nav-item">
           <a href="index.htm" class="nav-link">Nyheter</a>
@@ -46,8 +50,8 @@
 
         <li class="nav-item dropdown">
           <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" role="button" id="dLabel" aria-haspopup="true" aria-expanded="false">
-            Kursinformation
-          </a>
+    					Kursinformation
+    				</a>
           <div class="dropdown-menu" aria-labeledby="dLabel">
             <a href="#" class="dropdown-item">Action</a>
             <a href="#" class="dropdown-item">Action</a>
@@ -179,20 +183,19 @@
   <script type="text/javascript" src="js/vendor/jquery.color-2.1.2.min.js"></script>
   <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
   <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/vendor/isotope.pkgd.min.js"></script>
   <script>
-    var msnry = $('.peeps').masonry({
+    var msnry = $('.peeps').isotope({
       itemSelector: '.peep',
       columnWidth: '.peep-sizer',
       percentPosition: true,
       transitionDuration: 0
     });
     msnry.imagesLoaded().progress(function() {
-      msnry.masonry('layout');
+      msnry.isotope('layout');
     });
   </script>
   <script type="text/javascript" src="js/navscroll.js"></script>
-  <script type="text/javascript" src="js/player.js"></script>
 </body>
 
 </html>
