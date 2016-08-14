@@ -90,10 +90,28 @@ $on-laptop:        800px;
 }
 
 #menu {
-  background-color: black;
+  background-color: #424242;
   height: 100%;
   width: 300px;
   z-index: 3000;
+  
+  ul {
+    padding: 40px 0 0 0;
+    
+    li a {
+      display: block;
+      padding: 10px;
+      color: white;
+    }
+    
+    li a:hover {
+      padding-left: 7px;
+      background-color: #555;
+      border-left: 3px solid white;
+    }
+    
+  }
+  
 }
 
 body {
