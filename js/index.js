@@ -6,12 +6,11 @@ var isotp = new Isotope(newsDOM, {
   transitionDuration: 0
 });
 
-$('#searchstring').on("input", function (e) {
-    console.log("hi");
+$('#search').on("input", function (e) {
     isotp.arrange({
     	filter: function() {
     	  var text = this.querySelector(".card-text").innerText;
-        return text.match(new RegExp($('#searchstring').val(), "i"));
+        return text.match(new RegExp($('#search').val(), "i"));
       }
     });
   });
