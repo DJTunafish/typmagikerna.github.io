@@ -87,16 +87,15 @@ $on-laptop:        800px;
   background-color: black;
   height: 100%;
   width: 300px;
-  transform: translate(300px);
   position: absolute;
   transition: transform 0.3s;
-  right: 0;
+  right: -300px;
   top: 0;
   z-index: 3000;
 }
 
 #menu.translated {
-  transform: translate(0px);
+  transform: translate(-300px);
 }
 
 #not-menu {
