@@ -83,6 +83,12 @@ $on-laptop:        800px;
 
 }
 
+#navbar-close-button {
+  border:none;
+  background:none;
+  color:white;
+}
+
 #menu {
   background-color: black;
   height: 100%;
@@ -94,7 +100,7 @@ $on-laptop:        800px;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-color: #00a844;
+  background-color: #c7eafc;
   padding-top: 54px;
 }
 
