@@ -6,6 +6,10 @@ var isotp = new Isotope(newsDOM, {
   transitionDuration: 0
 });
 
+$(newsDOM).imagesLoaded().progress( function() {
+    isotp.layout();
+});
+
 $('#search').on("input", function (e) {
     isotp.arrange({
     	filter: function() {
