@@ -5,15 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Monaden.se</title>
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css" media="screen" type="text/css" charset="utf-8" /> {% for src in page.css %}
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/{{ src }}" media="screen" type="text/css" charset="utf-8" /> {% endfor %}
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css" media="screen" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/dist/slidebars.min.css" media="screen" type="text/css" charset="utf-8" />
+  {% for src in page.css %}
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/{{ src }}" media="screen" type="text/css" charset="utf-8" />
+  {% endfor %}
 </head>
 
 <body>
-  <div id="mask"></div>
-  <div id="not-menu">
+  <div id="mask" canvas="container"></div>
+  <div id="not-menu" canvas="container">
     <div class="container">
+
       <nav id="main-navigation">
+        <div id="navtoggle">
+          <button type="button" id="navbar-open-button">
+            &#9776;
+          </button>
+        </div>
+
         <div id="brand">
           <a href="#">monaden.se</a>
         </div>
@@ -22,12 +32,6 @@
           <form>
             <input id="search" type="text" placeholder="Search">
           </form>
-        </div>
-
-        <div id="navtoggle">
-          <button type="button" id="navbar-open-button">
-            &#9776;
-          </button>
         </div>
       </nav>
     </div>
@@ -40,7 +44,7 @@
       {{ content }}
     </div>
   </div>
-  <div id="menu">
+  <div id="menu" off-canvas="id-1 left push">
     <button id="navbar-close-button">
       &#x2716;
     </button>
@@ -75,6 +79,7 @@
 
   <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/jquery.color-2.1.2.min.js"></script>
+  <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/slidebars.min.js"></script>
   <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/bootstrap.js"></script>
   <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/imagesloaded.pkgd.min.js"></script>
   <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/js/vendor/isotope.pkgd.min.js"></script>
