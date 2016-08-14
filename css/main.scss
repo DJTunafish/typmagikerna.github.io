@@ -96,12 +96,19 @@ $on-laptop:        800px;
   z-index: 3000;
 }
 
-#not-menu {
-  background-image: url("../images/bg.png");
+body {
+  background-image: url("../images/bg_slice.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-color: #c7eafc;
   padding-top: 54px;
+}
+
+#bg {
+  background: url("../images/bg.png") no-repeat center top, url("../images/bg_slice.png") repeat-x, #c7eafc;
+}
+
+#not-menu {
+  background: none;
 }
 
 #mask {

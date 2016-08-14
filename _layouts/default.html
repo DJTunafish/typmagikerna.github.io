@@ -16,7 +16,8 @@
 <body>
   <div id="mask" canvas="container"></div>
   <div id="not-menu" canvas="container">
-    <div class="container">
+    <div id="bg">
+      <div class="container">
 
       <nav id="main-navigation">
         <div id="navtoggle">
@@ -37,12 +38,13 @@
       </nav>
     </div>
 
-    <div class="header">
+      <div class="header">
       <h1>monaden.se</h1>
     </div>
 
-    <div id="main-content">
+      <div id="main-content">
       {{ content }}
+    </div>
     </div>
   </div>
   <div id="menu" off-canvas="id-1 left push">
