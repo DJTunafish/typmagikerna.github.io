@@ -173,6 +173,7 @@ body {
   
   h1 {
     @extend .card-title;
+    font-size: 1.4rem;
   }
   
   p {
@@ -185,14 +186,14 @@ body {
 #news {
     #news-sizer {
         @extend .col-xs-12;
-        @extend .col-md-6;
-        @extend .col-lg-12;
+        @extend .col-lg-6;
+        @extend .col-xl-4;
     }
     
     .newsbit {
         @extend .col-xs-12;
-        @extend .col-md-6;
-        @extend .col-lg-4;
+        @extend .col-lg-6;
+        @extend .col-xl-4;
     }
 }
 
