@@ -92,17 +92,16 @@ $on-laptop:        800px;
 #menu {
   background-color: #424242;
   height: 100%;
-  width: 300px;
+  width: 250px;
   z-index: 3000;
-  
-  .ul-1 {
+
+  & > ul {
     padding: 40px 0 0 0;
     
     li a {
       display: block;
       padding: 10px;
       color: white;
-      list-style: none;
     }
     
     li a:hover {
@@ -110,11 +109,28 @@ $on-laptop:        800px;
       background-color: #555;
       border-left: 3px solid white;
     }
-  }
-  
+    
+    ul {
+      padding: 0;
       
-  .ul-2 {
-    padding: 0 0 10px 0;
+      li {
+        list-style: none;
+      }
+      
+      li a {
+        display: block;
+        padding-left: 18px;
+        color: white;
+      }
+      
+      li a:hover {
+        padding-left: 15px;
+        background-color: #555;
+        border-left: 3px solid white;
+      }
+      
+    }
+    
   }
   
 }

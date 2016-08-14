@@ -10,14 +10,14 @@ js:
       <div class="card">
         
         {% if post.image %}
-        <img class="card-img-top img-fluid" src="{{ site.url }}/images/{{ post.image }}" alt="" />
+        <img class="card-img-top img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image }}" alt="" />
         {% endif %}
         
         <div class="card-block">
           
-          {% if post.title %}
+          {% if post.header %}
           <h4 class="card-title">
-            {{ post.title }}
+            {{ post.header }}
           </h4>
           {% endif %}
           

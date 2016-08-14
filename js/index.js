@@ -9,7 +9,7 @@ var isotp = new Isotope(newsDOM, {
 $('#search').on("input", function (e) {
     isotp.arrange({
     	filter: function() {
-    	  var text = this.querySelector(".card-text").innerText;
+    	  var text = this.innerText;
         return text.match(new RegExp($('#search').val(), "i"));
       }
     });
