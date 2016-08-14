@@ -95,7 +95,7 @@ $on-laptop:        800px;
   width: 300px;
   z-index: 3000;
   
-  ul {
+  .ul-1 {
     padding: 40px 0 0 0;
     
     li a {
@@ -110,15 +110,17 @@ $on-laptop:        800px;
       background-color: #555;
       border-left: 3px solid white;
     }
-    
+  }
+  
+      
+  .ul-2 {
+    padding: 0 0 10px 0;
   }
   
 }
 
 body {
-  background-image: url("../images/bg_slice.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background: url("../images/bg.png") no-repeat center top, url("../images/bg_slice.png") repeat-x, #c7eafc;
   padding-top: 54px;
 }
 
