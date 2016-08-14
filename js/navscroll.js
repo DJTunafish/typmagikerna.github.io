@@ -9,7 +9,7 @@ window.onscroll = (function () {
     'use strict';
 
     var isOnTop = true,
-        main_nav = $("#main-nav");
+        main_nav = $("#main-navigation");
     return function () {
         if (document.body.scrollTop < 50 && isOnTop === false) {
             main_nav.animate({backgroundColor: "rgba(0,0,0,0)"}, 250);
