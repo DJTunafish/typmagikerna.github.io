@@ -7,7 +7,7 @@ js:
     <div id="#news-sizer"></div>
     {% for post in site.posts %}
     <div class="newsbit">
-      <div class="card">
+      <div class="card {{ post.category }}">
         
         {% if post.image %}
         <img class="card-img-top img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/{{ post.image }}" alt="" />
