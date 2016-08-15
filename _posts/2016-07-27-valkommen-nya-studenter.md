@@ -1,7 +1,7 @@
 ---
 header: Välkommen nya studenter
 date: 2016-07-27
-image: megaman.png
+image: megaman.jpg
 ---
 
 Nu är det snart läsårsstart 2016 och vi i styrelsen laddar för fullt för att ta emot alla nya studenter på det Datavetenskapliga Programmet.
