@@ -1,6 +1,0 @@
-title: hello
-date: 2016-01-20
-image: slack.png
-links: [Facebook](http://www.facebook.com) [Google](http://www.google.com)
-
-This is some text! Hello there!
