@@ -192,6 +192,11 @@ body {
     .newsbit {
         @extend .col-xs-12;
         @extend .col-lg-6;
+
+        img.card-img-top {
+          margin: auto;
+        }
+
     }
 }
 
