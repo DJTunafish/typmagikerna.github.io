@@ -43,15 +43,16 @@ $on-laptop:        800px;
 }
 
 #main-navigation {
-  @extend .navbar;
-  @extend .navbar-fixed-top;
+  //@extend .navbar;
+  //@extend .navbar-fixed-top;
   
   background-color: transparent;
+  margin-top: 2px;
   
   #brand {
     @extend .hidden-xs-down;
-    @extend .col-sm-5;
-    @extend .col-md-6;
+    @extend .col-sm-4;
+    @extend .col-md-4;
     @extend .col-lg-2;
     
     a {
@@ -62,32 +63,39 @@ $on-laptop:        800px;
   
   #searchbar {
     @extend .col-xs-10;
-    @extend .col-sm-5;
-    @extend .col-md-4;
+    @extend .col-sm-8;
+    @extend .col-md-8;
     @extend .col-lg-3;
-    @extend .pull-lg-right;
+    @extend .pull-xs-right;
     
     input {
       @extend .form-control;
     }
   }
   
-  #navtoggle {
-    @extend .col-xs-2;
-    
-    button {
-      @extend .navbar-toggler;
-      color: white;
-    }
-  }
 
+}
+
+#navtoggle {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  
+  button {
+    @extend .navbar-toggler;
+    color: white;
+  }
 }
 
 #navbar-close-button {
   border:none;
   background:none;
   color:white;
+  position: absolute;
+  top: 9px;
+  left: 0;
 }
+
 
 #menu {
   background-color: #424242;
@@ -96,7 +104,7 @@ $on-laptop:        800px;
   z-index: 3000;
 
   & > ul {
-    padding: 40px 0 0 0;
+    padding: 60px 0 0 0;
     
     li a {
       display: block;
