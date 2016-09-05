@@ -54,21 +54,48 @@
     </button>
     <ul>
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}" class="nav-link">Nyheter</a>
+      <a href="{{ site.url }}{{ site.baseurl }}" class="nav-link {% if page.group == "news" %}active{% endif %}">
+            <i class="material-icons">&#xE031;</i>
+            Nyheter
+        </a>
       </li>
 
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}sat" class="nav-link">SAT</a>
+        <a href="{{ site.url }}{{ site.baseurl }}sat" class="nav-link {% if page.group == "sat" %}active{% endif %}">
+            <i class="material-icons">&#xE0BA;</i>
+            SAT
+        </a>
       </li>
 
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}monaden" class="nav-link">Monaden</a>
+        <a href="{{ site.url }}{{ site.baseurl }}monaden" class="nav-link {% if page.group == "monaden" %}active{% endif %}">
+            <i class="material-icons">&#xE88A;</i>
+            Monaden
+        </a>
       </li>
 
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}firstyear" class="nav-link">För förstaårsstudenter</a>
+        <a href="{{ site.url }}{{ site.baseurl }}firstyear" class="nav-link {% if page.group == "firstyear" %}active{% endif %}">
+            <i class="material-icons">&#xE87C;</i>
+            Förstaårsstudenter
+        </a>
       </li>
 
+    </ul>
+    <h1>External links</h1>
+    <ul>
+      <li>
+        <a href="http://lambdasex.se/" class="nav-link">
+            <i class="material-icons">&#xE409;</i>
+            Lambda6
+        </a>
+      </li>
+      <li>
+        <a href="http://www.gotastudentkar.se/sektioner/it-section" class="nav-link">
+            <i class="material-icons">&#xE409;</i>
+            IT-Sektionen
+        </a>
+      </li>
     </ul>
   </div>
 

@@ -100,22 +100,49 @@ $on-laptop:        800px;
 #menu {
   background-color: #424242;
   height: 100%;
-  width: 250px;
+  width: 261px;
   z-index: 3000;
+  padding-top: 60px;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-left: 10px;
+  }
 
   & > ul {
-    padding: 60px 0 0 0;
+    padding: 10px 0 30px 0;
+
+    li {
+      list-style-type: none;
+      margin: 6px 12px 6px 12px;
+      position: relative;
+    }
     
     li a {
       display: block;
       padding: 10px;
       color: white;
+      border: 2px solid #666666;
+      border-radius: 8px;
+      background-color: #666666;
+      text-transform: uppercase;
+      font-size: small;
+      padding-left: 36px;
+      font-size: 13px;
+
+      i {
+        vertical-align: bottom;
+        position: absolute;
+        left: 8px;
+        top: 10px;
+      }
+
     }
-    
-    li a:hover {
-      padding-left: 7px;
-      background-color: #555;
-      border-left: 3px solid white;
+
+    li a.active, li a:hover {
+      border-color: #9e9e9e;
+      background-color: #969696;
     }
     
     ul {
