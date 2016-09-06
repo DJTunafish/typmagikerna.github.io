@@ -18,3 +18,7 @@ $('#search').on("input", function (e) {
       }
     });
   });
+
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});

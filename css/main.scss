@@ -34,6 +34,20 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "bootstrap";
 
+
+.lambdasex {
+    background-image: url("../images/lambda6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e7f2f7;
+}
+
+.help {
+    text-align: right;
+    vertical-align: middle;
+    margin-bottom: -8px;
+}
+
 .mytesto {
   @extend .col-xs-10;
   @extend .col-sm-5;

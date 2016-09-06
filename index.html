@@ -37,7 +37,14 @@ group: news
         {% endif %}
         
         <footer class="card-footer text-muted">
-          {{ post.date | date: '%B %d, %Y' }}
+            <div class="col-xs-10">
+              {{ post.date | date: '%B %d, %Y' }}
+            </div>
+            <div class="col-xs-2 help" style="text-align: right">
+                {% if post.category == "lambdasex" %}
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Detta är en gästpost av festföreningen Lambda6! Länk till Lambda6 finns i menyn till vänster."><i class="material-icons">&#xE887;</i></a>
+                {% endif %}
+            </div>
         </footer>
         
       </div>
