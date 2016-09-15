@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/wood_background.jpg");
+    width: 1280px;
+    height: 720px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#small_note {
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+    position: absolute;
+    left: 31px;
+    top: 63px;
+    background-color: white;
+    padding: 30px 20px 10px 20px;
+    transform: rotate(-2deg);
+    background-image: url("../images/pin.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 4px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.39);
+    background-color: #ffeb4f;
+    font-family: "Give You Glory";
+    font-size: 22px;
+}
+
+#big_note {
+    width: 293px;
+    height: 229px;
+    overflow: hidden;
+    position: absolute;
+    left: 431px;
+    top: 63px;
+    background-color: white;
+    padding: 30px 20px 10px 20px;
+    transform: rotate(0.5deg);
+    background-image: url("../images/pin.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 4px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.39);
+}
