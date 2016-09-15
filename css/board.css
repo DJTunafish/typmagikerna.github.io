@@ -24,7 +24,7 @@ body {
     transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
-    background-image: url("../images/pin.png");
+    background-image: url("../images/pin_red.png");
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 4px;
