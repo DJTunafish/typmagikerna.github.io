@@ -1,3 +1,8 @@
+// Reload this page every 10 minutes.
+setTimeout(function() {
+    location.reload();
+}, 1000 * 60 * 10);
+
 $(document).ready(function () {
     $.simpleWeather({
         location: '57.687747, 11.978457',
