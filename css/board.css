@@ -41,15 +41,17 @@ body {
     left: 431px;
     top: 63px;
     background-color: rgba(255,255,255,1);
-    padding: 30px 4px 3px 4px;
+    padding: 30px 12px 8px 10px;
     transform: rotate(0.5deg);
+    -webkit-transform: rotate(0.5deg);
+    -ms-transform: rotate(0.5deg);
     /*    background: url("../images/pin.png") no-repeat 50% 4px url("paper_background.jpg");*/
-    /*background-image: url("../images/pin_red.png"), url("../images/paper_background.jpg");*/
-    background-image: url("../images/pin_red.png");
+    background-image: url("../images/pin_red.png"), url("../images/paper_background.jpg");
+    /*background-image: url("../images/pin_red.png");*/
     background-repeat: no-repeat, repeat;
     background-position-x: 50%, 0;
-    background-position-y: 4px, 0;*/
-    box-shadow: 1px 2px 8px rgba(0,0,0,0.39);
+    background-position-y: 4px, 0;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.39);
 }
 
 #tram_note table {

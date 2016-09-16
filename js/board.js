@@ -223,7 +223,8 @@ var vasttrafik_board = function (access_token) {
                 var departure = departures[i];
 
                 tr = document.createElement("tr");
-				tr.style.backgroundColor = "rgba(" + departure.color.r + ","+ departure.color.g + "," + departure.color.b + ", 0.5)";
+				tr.style.backgroundColor = "rgba(" + departure.color.r + ","+ departure.color.g + "," + 
+						departure.color.b + ", 0.4)";
                 td = document.createElement("td");
                 td.innerText = departure.name;
                 tr.appendChild(td);
