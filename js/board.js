@@ -6,7 +6,14 @@ setTimeout(function() {
 $(document).ready(function () {
     weatherApp();
     vasttrafik();
+    setTimeout(updateVasttrafik, 1000*30);
 });
+
+function updateVasttrafik() {
+    document.body.removeChild(document.getElementById("tram_note"));
+    vasttrafik();
+    setTimeout(updateVasttrafik, 1000*30);
+}
 
 function hexToRgb(hex) {
     // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
