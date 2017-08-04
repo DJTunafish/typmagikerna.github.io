@@ -63,7 +63,7 @@
       <li>
         <a href="{{ site.url }}{{ site.baseurl }}sat" class="nav-link {% if page.group == "sat" %}active{% endif %}">
             <i class="material-icons">&#xE0BA;</i>
-            Studentgruppen Data
+            SG Data
         </a>
       </li>
 

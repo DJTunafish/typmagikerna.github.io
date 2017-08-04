@@ -36,15 +36,65 @@ group: sat
 
   <div class="peep col-xs-12 col-sm-6 col-md-4">
     <div class="card">
-      <img src="{{ site.images.url }}{{ site.images.baseurl }}axel.jpg" alt="Card image" class="card-img-top card-img">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}sarosh.jpg" alt="Card image" class="card-img-top card-img">
       <div class="card-block">
-        <h4 class="card-title">Axel Olivecrona</h4>
+        <h4 class="card-title">Sarosh Nasir</h4>
         <h6 class="card-subtitle text-muted">Vice Ordförande</h6>
       </div>
     </div>
   </div>
 
- <div class="peep col-xs-12 col-sm-6 col-md-4">
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
+    <div class="card">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}matilda.jpg" alt="Card image" class="card-img-top card-img">
+      <div class="card-block">
+        <h4 class="card-title">Matilda Andersson</h4>
+        <h6 class="card-subtitle text-muted">Kassör</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
+    <div class="card">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}kaffedaniel_550x550.jpg" alt="Card image" class="card-img-top card-img">
+      <div class="card-block">
+        <h4 class="card-title">Daniel Beecham</h4>
+        <h6 class="card-subtitle text-muted">Sekreterare</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
+    <div class="card">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}stefan.jpg" alt="Card image" class="card-img-top card-img">
+      <div class="card-block">
+        <h4 class="card-title">Stefan Spôck Fritzon</h4>
+        <h6 class="card-subtitle text-muted">Alumniansvarig</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
+    <div class="card">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}sam.jpg" alt="Card image" class="card-img-top card-img">
+      <div class="card-block">
+        <h4 class="card-title">Sam Jawa Faint</h4>
+        <h6 class="card-subtitle text-muted">Sexmästeriansvarig</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
+    <div class="card">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}jonatan.jpg" alt="Card image" class="card-img-top card-img">
+      <div class="card-block">
+        <h4 class="card-title">Jonatan Johansson</h4>
+        <h6 class="card-subtitle text-muted">Ledamot</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="peep col-xs-12 col-sm-6 col-md-4">
     <div class="card">
       <img src="{{ site.images.url }}{{ site.images.baseurl }}therese.jpg" alt="Card image" class="card-img-top card-img">
       <div class="card-block">
@@ -56,10 +106,10 @@ group: sat
 
   <div class="peep col-xs-12 col-sm-6 col-md-4">
     <div class="card">
-      <img src="{{ site.images.url }}{{ site.images.baseurl }}robert.jpg" alt="Card image" class="card-img-top card-img">
+      <img src="{{ site.images.url }}{{ site.images.baseurl }}robin.jpg" alt="Card image" class="card-img-top card-img">
       <div class="card-block">
-        <h4 class="card-title">Robert Krook</h4>
-        <h6 class="card-subtitle text-muted">Sekreterare</h6>
+        <h4 class="card-title">Robin Åstedt</h4>
+        <h6 class="card-subtitle text-muted">Suppleant</h6>
       </div>
     </div>
   </div>
